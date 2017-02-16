@@ -1,0 +1,34 @@
+html * {
+  padding: 0;
+  margin: 0;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Futura', Sans-Serif;
+  font-size: 10pt;
+}
+
+/* This applies from 600px onwards */
+@media (min-width: 600px) {
+  body {
+    
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    
+  }
+}
