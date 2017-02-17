@@ -13,6 +13,11 @@ body {
   font-family:'Futura', Sans-Serif;
   font-size: 10pt;
 }
+div {
+   width: 1000px;
+   height: 1000px;
+   background: url(http://68.media.tumblr.com/648d48effe677852a59c2b25dee4ca21/tumblr_oiww0bTvIR1qzn6p7o1_400.gif) repeat;
+}
 
 /* This applies from 600px onwards */
 @media (min-width: 600px) {
