@@ -24,6 +24,9 @@
 -------------------------------------------------------------- */
 
 /*-- 1.1 - Headings --*/
+h1 {
+  display: none;
+}
 
 /*-- 1.2 - Body Copy --*/
 
@@ -39,12 +42,11 @@
 /*-- 2.1 - Main Menu --*/
 .main-nav {
   display: none;
-  color: hotpink;
 }
 
 .mobile-nav {
-  display: block;
-  color: aqua;
+  display: flex;
+
 }
 
 .mobile-nav > ul {
@@ -71,6 +73,10 @@
     margin-bottom: 20px;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+}
 /*-- 13.2 - Columns --*/
 
 .col-1-2 {
@@ -173,11 +179,17 @@ body {
 
 /* This applies from 600px onwards */
 @media (min-width: 600px) {
+  .main-nav li {
+    display: inline-block;
+  }
   .main-nav {
     display: block;
   }
   .mobile-nav {
     display: none;
+  }
+  h1 {
+    display: inline;
   }
   body {
   
