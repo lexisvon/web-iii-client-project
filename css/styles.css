@@ -23,6 +23,25 @@
 1.0 - TYPOGRAPHY
 -------------------------------------------------------------- */
 
+body {
+  font-family:'freighttext pro', Sans-Serif;
+  font-size: 10pt;
+}
+
+/* These are how we need to specify our other typefaces
+
+h1 {
+  font-family:'freightsans pro', Sans-Serif;
+}
+
+h2 {
+  font-family:'freightdisp pro', Sans-Serif;
+}
+
+*/
+
+
+
 /*-- 1.1 - Headings --*/
 h1 {
   display: none;
@@ -160,7 +179,7 @@ html * {
 }
 
 body {
-  font-family:'Futura', Sans-Serif;
+  font-family:'freighttext pro', Sans-Serif;
   font-size: 10pt;
 }
 
