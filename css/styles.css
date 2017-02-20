@@ -38,6 +38,7 @@
 
 /*-- 2.1 - Main Menu --*/
 
+
 /*-- 2.2 - Footer Menu --*/
 
 /*--------------------------------------------------------------
@@ -100,18 +101,21 @@ body {
 /* This applies from 600px onwards */
 @media (min-width: 600px) {
   body {
-    
+  
   }
+ 
 }
 
 @media (min-width: 800px) {
   body {
     
   }
+
 }
 
 @media (min-width: 1200px) {
   body {
     
   }
+
 }
