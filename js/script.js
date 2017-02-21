@@ -1,8 +1,10 @@
 $(document).ready(function(){
 $('.mobile-nav-btn').click(function(e){
 		$('.mobile-nav > ul').slideToggle();
+		
 		// this prevents the browser from doing the default link action
 		e.preventDefault();
+
 	});
 
 	var $window = $(window);
@@ -12,4 +14,5 @@ $('.mobile-nav-btn').click(function(e){
             $('.mobile-nav').show();
         }
     });
+
 });
