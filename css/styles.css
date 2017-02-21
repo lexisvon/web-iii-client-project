@@ -26,6 +26,7 @@
 body {
   font-family:'freighttext pro', Sans-Serif;
   font-size: 10pt;
+  color: #5E6868;
 }
 
 /* These are how we need to specify our other typefaces
@@ -54,6 +55,10 @@ ul {
 }
 
 /*-- 1.3 - Buttons --*/
+a {
+  color: #5E6868;
+  text-decoration: none;
+}
 
 /*-- 1.4 - Forms --*/
 
@@ -236,6 +241,9 @@ body {
 }
 
 @media (min-width: 800px) {
+   .mobile-nav {
+    display: none;
+  }
   body {
     
   }
@@ -243,6 +251,9 @@ body {
 }
 
 @media (min-width: 1200px) {
+   .mobile-nav {
+    display: none;
+  }
   body {
     
   }
