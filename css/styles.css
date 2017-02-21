@@ -65,9 +65,7 @@ h1 {
 
 .mobile-nav {
   display: flex;
-
 }
-
 .mobile-nav > ul {
   display: none;
 }
@@ -94,7 +92,7 @@ h1 {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 /*-- 13.2 - Columns --*/
 
@@ -209,6 +207,9 @@ body {
   }
   h1 {
     display: inline;
+  }
+  header {
+    justify-content: space-between;
   }
   body {
   
