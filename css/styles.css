@@ -68,6 +68,22 @@ a {
 -------------------------------------------------------------- */
 
 /*-- 2.1 - Main Menu --*/
+.landing {
+  height: 100vh;
+  position: relative;
+  min-height: 500px;
+  overflow-x: hidden;
+  width: 100vw;
+  background: url('../img/hero.jpg') center/cover no-repeat;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+}
+
 .main-nav {
   display: none;
 }
@@ -75,26 +91,35 @@ a {
 .mobile-nav {
   display: flex;
 }
-.mobile-nav > ul {
-  display: none;
-}
+
 .mobile-nav {
   position: absolute;
-  right: -300px;
-  height: 300px;
-  width: 300px;
+  right: -200px;
+  top: 0;
+  bottom: 0;
+  width: 200px;
   transition: right 1s ease;
-  background-color: hotpink;
 }
 
 .show {
   right: 0;
 }
+
 .mobile-nav-btn {
+  display: block;
   position: absolute;
   top: 10px;
   right: 10px;
   z-index: 1;
+}
+.mobile-nav ul {
+  text-align: center;
+  width: 100%;
+}
+.mobile-nav li {
+  padding: 20px 0;
+  border-bottom: 1px solid lightgrey;
+  background-color: white;
 }
 /*-- 2.2 - Footer Menu --*/
 
@@ -116,18 +141,7 @@ a {
     margin-bottom: 20px;
 }
 
-.landing {
-  height: 100vh;
-  min-height: 500px;
-  background: url('../img/hero.jpg') center/cover no-repeat;
-}
 
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: white;
-}
 /*-- 13.2 - Columns --*/
 
 .col-1-2 {
@@ -239,7 +253,7 @@ body {
   .main-nav {
     display: block;
   }
-  .mobile-nav {
+  .mobile-nav, .mobile-nav-btn {
     display: none;
   }
   h1 {
@@ -258,9 +272,6 @@ body {
 }
 
 @media (min-width: 800px) {
-   .mobile-nav {
-    display: none;
-  }
   body {
     
   }
@@ -268,9 +279,6 @@ body {
 }
 
 @media (min-width: 1200px) {
-   .mobile-nav {
-    display: none;
-  }
   body {
     
   }
