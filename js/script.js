@@ -1,7 +1,8 @@
 $(document).ready(function(){
 $('.mobile-nav-btn').click(function(e){
-		$('.mobile-nav > ul').slideToggle();
-		
+		 $("nav").toggleClass("show");
+		 $("div").toggleClass("push"); 
+
 		// this prevents the browser from doing the default link action
 		e.preventDefault();
 
