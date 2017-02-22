@@ -59,7 +59,9 @@ a {
   color: #5E6868;
   text-decoration: none;
 }
-
+.mobile-nav-btn {
+  color: lightgrey;
+}
 /*-- 1.4 - Forms --*/
 
 
@@ -198,9 +200,17 @@ header {
 -------------------------------------------------------------- */
 .hero-img img {
  width: 100%;
-
 }
 
+img {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 200px;
+  height: 200px;
+  transform: rotate(-15deg);
+  mix-blend-mode: hard-light;
+}
 /*--------------------------------------------------------------
 5.0 - UTILITY
 -------------------------------------------------------------- */
