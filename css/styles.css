@@ -48,7 +48,7 @@ h1 {
   display: none;
   color: #91AEAE;
   font-family:'freightdisp pro', Sans-Serif;
-
+  letter-spacing: 0.25rem;
 }
 
 /*-- 1.2 - Body Copy --*/
@@ -64,6 +64,10 @@ a {
 }
 .mobile-nav-btn {
   color: lightgrey;
+}
+
+.main-nav li {
+  padding: 0 7px;
 }
 /*-- 1.4 - Forms --*/
 
@@ -104,7 +108,7 @@ header {
   top: 0;
   bottom: 0;
   width: 200px;
-  transition: right 1s ease;
+  transition: right .75s ease;
 }
 
 .show {
@@ -127,6 +131,7 @@ header {
   border-bottom: 1px solid lightgrey;
   background-color: white;
 }
+
 /*-- 2.2 - Footer Menu --*/
 
 /*--------------------------------------------------------------
@@ -136,15 +141,20 @@ header {
 /*-- 3.1 - Site Structure --*/
 
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 [class*='col-'] {
-    float: left;
-    padding-right: 25px;
-    margin-bottom: 20px;
+  float: left;
+  padding-right: 25px;
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 97%;
 }
 
 
@@ -261,6 +271,32 @@ body {
 
 /* This applies from 600px onwards */
 @media (min-width: 600px) {
+
+
+  body {
+    width: 90%;
+  }
+  .wrapper {
+    width: 90%;
+  }
+
+
+ 
+}
+
+@media (min-width: 800px) {
+
+    h1 {
+    display: inline;
+  }
+  header {
+    justify-content: space-between;
+  }
+
+  .landing>header {
+      padding: 20px 0;
+}
+
   .main-nav li {
     display: inline-block;
   }
@@ -270,31 +306,16 @@ body {
   .mobile-nav, .mobile-nav-btn {
     display: none;
   }
-  h1 {
-    display: inline;
-  }
-  header {
-    justify-content: space-between;
-  }
-  body {
-  
-  }
-  .main-padding {
-    padding: 0 200px;
-  }
- 
-}
 
-@media (min-width: 800px) {
-  body {
-    
+  .wrapper {
+    width: 85%;
   }
 
 }
 
 @media (min-width: 1200px) {
-  body {
-    
+  .wrapper {
+    width: 75%;
   }
 
 }

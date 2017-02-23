@@ -9,7 +9,7 @@ $('.mobile-nav-btn').click(function(e){
 
 	var $window = $(window);
 	  $window.on('resize', function (){
-        if ($window.width() < 600)
+        if ($window.width() < 800)
         {
             $('.mobile-nav').show();
         }
