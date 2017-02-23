@@ -46,6 +46,9 @@ h2 {
 /*-- 1.1 - Headings --*/
 h1 {
   display: none;
+  color: #91AEAE;
+  font-family:'freightdisp pro', Sans-Serif;
+
 }
 
 /*-- 1.2 - Body Copy --*/
@@ -84,6 +87,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   background-color: white;
+  text-transform: uppercase;
 }
 
 .main-nav {
