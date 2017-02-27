@@ -298,6 +298,11 @@ img {
   width: 100%;
   height: 300px;
 }
+
+.main-logo:hover {
+  animation-name: wobble;
+  animation-duration: 2s;
+}
 /*--------------------------------------------------------------
 5.0 - UTILITY
 -------------------------------------------------------------- */
@@ -326,7 +331,10 @@ body {
   font-size: 10pt;
 }
 
-
+@keyframes wobble {
+  from{transform:rotate(-15deg);}
+  to{transform:rotate(10deg)}
+}
 
 
 
@@ -368,7 +376,7 @@ body {
   }
 
   .landing>header {
-      padding: 20px 0;
+      padding: 15px 0;
 }
 
   .main-nav li {
