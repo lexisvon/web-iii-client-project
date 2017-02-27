@@ -41,7 +41,6 @@ html * {
 
 
 
-
 /*-- 1.1 - Headings --*/
 h1, h2, .button-i {
 
@@ -359,6 +358,10 @@ body {
 
     h1 {
     display: inline;
+    margin-left: 8%;
+  }
+  .main-nav {
+    margin-right: 8%;
   }
   header {
     justify-content: space-between;
@@ -392,5 +395,4 @@ body {
   .wrapper {
     width: 75%;
   }
-
 }
