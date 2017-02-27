@@ -44,11 +44,38 @@ h2 {
 
 
 /*-- 1.1 - Headings --*/
-h1 {
-  display: none;
+h1, h2 {
   color: #91AEAE;
   font-family:'freightdisp pro', Sans-Serif;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+h1 {
+  display: none;
+}
+
+h1, .mobile-nav li, .main-nav li {
+  letter-spacing: 0.125rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.header-box {
+  display: flex;
+}
+
+h2, .header-rule {
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.header-rule {
+    height: 2px;
+    width: 100%;
+    background-color: #93D4CD;
 }
 
 /*-- 1.2 - Body Copy --*/
@@ -71,6 +98,11 @@ a {
 }
 /*-- 1.4 - Forms --*/
 
+p {
+  font-size: 1rem;
+  line-height: 1.45rem;
+}
+
 
 /*--------------------------------------------------------------
 2.0 - NAVIGATION MENUS
@@ -78,7 +110,7 @@ a {
 
 /*-- 2.1 - Main Menu --*/
 .landing {
-  height: 100vh;
+  height: 500px;
   position: relative;
   min-height: 500px;
   overflow-x: hidden;
@@ -92,7 +124,9 @@ header {
   align-items: center;
   background-color: white;
   text-transform: uppercase;
+
 }
+
 
 .main-nav {
   display: none;
@@ -121,7 +155,10 @@ header {
   top: 10px;
   right: 10px;
   z-index: 1;
+  font-size: 1.8rem;
 }
+
+
 .mobile-nav ul {
   text-align: center;
   width: 100%;
@@ -131,6 +168,12 @@ header {
   border-bottom: 1px solid lightgrey;
   background-color: white;
 }
+
+.mobile-nav li:first-of-type {
+  background-color: #d9e6e6; 
+}
+
+
 
 /*-- 2.2 - Footer Menu --*/
 
@@ -154,7 +197,14 @@ header {
 
 .wrapper {
   margin: 0 auto;
-  width: 97%;
+  width: 93%;
+  min-width: 500px;
+  max-width: 1200px;
+}
+
+.about {
+  margin-top: 40px;
+
 }
 
 
@@ -224,6 +274,12 @@ img {
   height: 200px;
   transform: rotate(-15deg);
   mix-blend-mode: hard-light;
+}
+
+.about-img {
+  background-color: lightgray;
+  width: 100%;
+  height: 300px;
 }
 /*--------------------------------------------------------------
 5.0 - UTILITY
@@ -309,6 +365,10 @@ body {
 
   .wrapper {
     width: 85%;
+  }
+
+  .landing {
+    height: 500px;
   }
 
 }
