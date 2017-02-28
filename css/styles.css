@@ -86,6 +86,7 @@ h2, .header-rule {
 
 p{
   font-family:'freightsans pro', Sans-Serif;
+  font-weight: 100;
 }
 
 ul {
@@ -137,7 +138,8 @@ p {
   min-height: 500px;
   overflow-x: hidden;
   width: 100vw;
-  background: url('../img/hero.jpg') center/cover no-repeat;
+  background: url('../img/hero.jpg') no-repeat;
+  background-size: cover;
 }
 
 header {
@@ -361,7 +363,7 @@ body {
 
 
   body {
-    width: 90%;
+
   }
   .wrapper {
     width: 90%;
@@ -373,7 +375,7 @@ body {
 
 @media (min-width: 800px) {
 
-    h1 {
+  h1 {
     display: inline;
   }
 
@@ -382,7 +384,7 @@ body {
   }
 
   .landing > header {
-      padding: 15px 0;
+      padding: 15px 50px;
   }
 
   .main-nav li {
