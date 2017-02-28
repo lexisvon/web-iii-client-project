@@ -98,6 +98,7 @@ a {
   color: #5E6868;
   text-decoration: none;
 }
+
 .mobile-nav-btn {
   color: lightgrey;
 }
@@ -114,6 +115,8 @@ a {
   font-weight: bold;
 
 }
+
+
 /*-- 1.4 - Forms --*/
 
 p {
@@ -217,11 +220,17 @@ header {
 .wrapper {
   margin: 0 auto;
   width: 93%;
+  max-width: 1140px;
 }
 
-.about {
+.about, .menu {
   margin-top: 40px;
 
+}
+
+.menu-featured header, .menu-featured .text-box {
+    width: 80%;
+    margin: 0 auto;
 }
 
 
@@ -275,7 +284,6 @@ header {
     padding-right: 0px;
 }
 
-
 /*--------------------------------------------------------------
 4.0 - MEDIA
 -------------------------------------------------------------- */
@@ -293,10 +301,10 @@ img {
   mix-blend-mode: hard-light;
 }
 
-.about-img {
+.about-img, .menu-img {
   background-color: lightgray;
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
 
 .main-logo:hover {
@@ -366,10 +374,10 @@ body {
 
     h1 {
     display: inline;
-    margin-left: 8%;
+    margin-left: 2%;
   }
   .main-nav {
-    margin-right: 8%;
+    margin-right: 2%;
   }
   header {
     justify-content: space-between;
@@ -395,6 +403,31 @@ body {
 
   .landing {
     height: 500px;
+  }
+
+  .about, .menu {
+    margin-top: 100px;
+
+  }
+
+  .about, .menu-featured {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+
+  .about .text-box {
+    width: 66%;
+    padding-right: 20px;
+  }
+
+  .about .text-box p {
+    width: 85%;
+  }
+
+  .about-img, .menu-img {
+    width: 33%;
   }
 
 }
