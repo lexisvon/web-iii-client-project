@@ -64,6 +64,7 @@ h1, .mobile-nav li, .main-nav li {
 h2 {
   font-size: 1.5rem;
   padding: 10px 0;
+  width: 75%;
 }
 
 .header-box {
@@ -374,18 +375,15 @@ body {
 
     h1 {
     display: inline;
-    margin-left: 2%;
   }
-  .main-nav {
-    margin-right: 2%;
-  }
+
   header {
     justify-content: space-between;
   }
 
-  .landing>header {
+  .landing > header {
       padding: 15px 0;
-}
+  }
 
   .main-nav li {
     display: inline-block;
@@ -402,7 +400,7 @@ body {
   }
 
   .landing {
-    height: 500px;
+    height: 100vh;
   }
 
   .about, .menu {
