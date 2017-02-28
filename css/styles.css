@@ -55,16 +55,32 @@ h1, h2, .button-i {
 
 h1 {
   display: none;
+  font-weight: 300;
 }
 
 h1, .mobile-nav li, .main-nav li {
   letter-spacing: 0.125rem;
 }
 
+.mobile-nav li:first-child {
+  font-weight: 300;
+}
+
 h2 {
   font-size: 1.5rem;
   padding: 10px 0;
-  width: 75%;
+  width: 55%;
+  font-weight: 300;
+}
+
+.featured-wine h2 {
+  width: 85%;
+  min-width: 20%;
+  padding-left: 15px;
+}
+
+.featured-wine .header-rule {
+  width: 70%;
 }
 
 .header-box {
@@ -84,7 +100,7 @@ h2, .header-rule {
 
 /*-- 1.2 - Body Copy --*/
 
-p{
+p {
   font-family:'freightsans pro', Sans-Serif;
   font-weight: 100;
 }
@@ -102,7 +118,7 @@ a {
 }
 
 .mobile-nav-btn {
-  color: lightgrey;
+  color: #E4E4E4;
 }
 
 .main-nav li {
@@ -148,9 +164,7 @@ header {
   align-items: center;
   background-color: white;
   text-transform: uppercase;
-
 }
-
 
 .main-nav {
   display: none;
@@ -162,10 +176,10 @@ header {
 
 .mobile-nav {
   position: absolute;
-  right: -200px;
+  right: -220px;
   top: 0;
   bottom: 0;
-  width: 200px;
+  width: 220px;
   transition: right .75s ease;
 }
 
@@ -182,11 +196,11 @@ header {
   font-size: 1.8rem;
 }
 
-
 .mobile-nav ul {
   text-align: center;
   width: 100%;
 }
+
 .mobile-nav li {
   padding: 20px 0;
   border-bottom: 1px solid lightgrey;
@@ -232,10 +246,15 @@ header {
 }
 
 .menu-featured header, .menu-featured .text-box {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
+.featured-wine .text-box {
+  width: 55%;
+  padding-left: 15px;
+  float: right;
+}
 
 /*-- 13.2 - Columns --*/
 
@@ -390,9 +409,11 @@ body {
   .main-nav li {
     display: inline-block;
   }
+
   .main-nav {
     display: block;
   }
+
   .mobile-nav, .mobile-nav-btn {
     display: none;
   }
@@ -423,13 +444,29 @@ body {
   }
 
   .about .text-box p {
-    width: 85%;
+    width: 70%;
+  }
+
+  .about .text-box h2 {
+    width: 35%;
   }
 
   .about-img, .menu-img {
     width: 33%;
   }
 
+  .featured-wine {
+    width: 66%;
+    padding-left: 20px;
+  }
+
+  .featured-wine .header-rule {
+    width: 80%;
+  }
+
+  .featured-wine .text-box {
+    padding-left: 37px;
+  }
 }
 
 @media (min-width: 1200px) {
