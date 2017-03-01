@@ -16,16 +16,24 @@ $('.mobile-nav-btn').click(function(e){
     });
 
 
+	  // added these two lines of code to set page load default
+	$("#dinner-content").addClass("main-courses");
+	$("#sub-menu").addClass("dinner");
+
 	$("#dinner").click(function() {
 		$("#sub-menu").removeClass();
 		$("#drinks-content").removeClass();
 		$("#sub-menu").addClass("dinner");
+				// added this to always show main courses on click of dinner
+		$("#dinner-content").addClass("main-courses");
 	});
 
 	$("#drinks").click(function() {
 		$("#sub-menu").removeClass();
 		$("#dinner-content").removeClass();
 		$("#sub-menu").addClass("drinks");
+		// added this to always show old world drinks on click of drinks
+		$("#drinks-content").addClass("old-world");
 	});
 
 	$("#appetizers").click(function() {
