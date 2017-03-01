@@ -48,9 +48,13 @@ h1, h2, .button-i {
 }
 
 h1, h2, .button-i {
-  color: #91AEAE;
   font-family:'freightdisp pro', Serif;
   letter-spacing: 0.125rem;
+}
+
+h2, .button-i {
+  color: #91AEAE;
+
 }
 
 h1 {
@@ -113,7 +117,7 @@ ul {
 
 
 a {
-  color: #5E6868;
+  color: #91AEAE;
   text-decoration: none;
 }
 
@@ -131,7 +135,14 @@ a {
   border: 1px solid #91AEAE;
   display: inline-block;
   font-weight: bold;
+  transition: .5s ease;
 
+}
+
+.button-i:hover {
+  background-color: #f2f5f5;
+  color: #5E6868;
+  border-color: #5E6868;
 }
 
 
@@ -209,7 +220,7 @@ header {
 
 .mobile-nav li:first-of-type {
   background-color: #f2f5f5;
-  color: #91AEAE;
+  color: #5E6868;
 }
 
 /*-- 2.2 - Footer Menu --*/
