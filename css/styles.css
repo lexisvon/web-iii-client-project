@@ -212,9 +212,82 @@ header {
   color: #91AEAE;
 }
 
-
-
 /*-- 2.2 - Footer Menu --*/
+
+
+
+/*-- 2.3 - Food Menu --*/
+
+ #sub-menu div, #dinner-content div, #drinks-content div {
+  display: none;
+} 
+
+#sub-menu.drinks .drinks,
+#sub-menu.dinner .dinner,
+#dinner-content.appetizers .appetizers,
+#dinner-content.veg-specials .veg-specials,
+#dinner-content.main-courses .main-courses,
+#dinner-content.desserts .desserts,
+#dinner-content.kids-menu .kids-menu,
+#drinks-content.old-world .old-world,
+#drinks-content.new-world .new-world,
+#drinks-content.beer .beer {
+    display: block;
+    animation: fade-in .75s;
+  animation-direction: both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.appetizers {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 800px;
+}
+
+.menu-item {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.menu-name {
+  align-self: flex-start;
+  width: 83.33%;
+}
+
+.descrip {
+  width: 83.33%;
+  font-family: "freightsans pro", sans-serif;
+}
+
+.price {
+  width: 16.66%;
+  font-family: "freightsans pro", sans-serif;
+
+}
+
+.menu-main span {
+  font-size: .75rem;
+}
+
+
+.menu-item, .menu-name, .descrip, .price {
+  display: flex !important;
+}
+
+.menu-main {
+  height: 500px;
+}
+
+
 
 /*--------------------------------------------------------------
 3.0 - CONTENT
