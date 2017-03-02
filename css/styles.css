@@ -157,7 +157,7 @@ a {
   border-color: #5E6868;
 }
 
-button {
+.menu button {
     border: none;
     font-weight: 600;
     text-transform: uppercase;
@@ -174,7 +174,7 @@ button {
     letter-spacing: .125rem;
 }
 
-button:hover, button:active {
+.menu-main button:hover, .menu-main button:active {
   border-bottom: 1px solid black;
 }
 
@@ -332,8 +332,9 @@ header {
 }
 
 .menu-main {
-  height: 500px;
+  height: 750px;
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 #dinner-content, #drinks-content {
@@ -442,9 +443,10 @@ header {
 -------------------------------------------------------------- */
 .hero-img img {
  width: 100%;
+
 }
 
-img {
+.main-logo {
   position: absolute;
   top: 25%;
   left: 10%;
@@ -463,6 +465,21 @@ img {
 .main-logo:hover {
   animation-name: wobble;
   animation-duration: 2s;
+}
+/* Gallery */
+.gallery-2 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.header-rule {
+  margin-bottom: 30px;
 }
 /*--------------------------------------------------------------
 5.0 - UTILITY

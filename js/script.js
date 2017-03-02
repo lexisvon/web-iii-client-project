@@ -15,6 +15,13 @@ $('.mobile-nav-btn').click(function(e){
         }
     });
 
+	  $('.gallery-2').slick({
+ 	 infinite: true,
+ 	speed: 500,
+  	fade: true,
+  	cssEase: 'linear'
+	});
+
 
 	  // added these two lines of code to set page load default
 	$("#dinner-content").addClass("main-courses");
@@ -79,3 +86,4 @@ $('.mobile-nav-btn').click(function(e){
 	});	  
 
 });
+
