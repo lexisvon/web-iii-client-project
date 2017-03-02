@@ -332,7 +332,6 @@ header {
 }
 
 .menu-main {
-  height: 750px;
   margin-top: 50px;
   margin-bottom: 30px;
 }
@@ -474,7 +473,7 @@ header {
 
 .gallery {
   display: block;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -615,6 +614,10 @@ body {
   .featured-wine .text-box {
     padding-left: 37px;
   }
+  .gallery {
+    width: 75%;
+  }
+
 
 }
 
@@ -622,4 +625,5 @@ body {
   .wrapper {
     width: 75%;
   }
+
 }
