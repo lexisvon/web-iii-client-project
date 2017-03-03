@@ -157,7 +157,7 @@ a {
   border-color: #5E6868;
 }
 
-.menu button {
+.menu-main button {
     border: none;
     font-weight: 600;
     text-transform: uppercase;
@@ -190,6 +190,10 @@ p {
   line-height: 1.5rem;
 }
 
+label {
+  display: none;
+}
+
 
 /*--------------------------------------------------------------
 2.0 - NAVIGATION MENUS
@@ -202,6 +206,7 @@ p {
   min-height: 500px;
   overflow-x: hidden;
   width: 100vw;
+  max-width: 100%;
   background: url('../img/hero.jpg') no-repeat;
   background-size: cover;
 }
@@ -210,8 +215,11 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: white;
   text-transform: uppercase;
+}
+
+.landing header {
+  background-color: white;
 }
 
 .main-nav {
@@ -485,6 +493,10 @@ header {
 -------------------------------------------------------------- */
 
 /*-- 5.1 - Background Colors --*/
+
+.bg-blue {
+  background-color: #F8FAFA;
+}
 
 /*-- 5.2 - Alignments --*/
 
