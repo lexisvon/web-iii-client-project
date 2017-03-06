@@ -118,7 +118,7 @@ ul {
 }
 
 .price p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #91AEAE;
     margin: 0 auto;
     font-weight: 600;
@@ -165,7 +165,8 @@ a {
     background-color: transparent;
     color: #5E6868;
     letter-spacing: .25rem;
-    padding: 7px 10px;
+    padding: 2px 0;
+    margin: 10px;
 }
 
 #sub-menu button {
@@ -315,6 +316,7 @@ header {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  margin: 10px 0;
 }
 
 .menu-name {
@@ -338,13 +340,14 @@ header {
 }
 
 
+
+
 .menu-item, .menu-name, .descrip, .price {
   display: flex !important;
 }
 
-.menu-main {
-  margin-top: 50px;
-  margin-bottom: 30px;
+.bg-blue .menu-main {
+  padding: 40px 0;
 }
 
 #dinner-content, #drinks-content {
@@ -399,7 +402,20 @@ header {
 }
 
 .drinks > .menu-item-active, .dinner > .menu-item-active, .menu-main > .menu-item-active {
-  border-bottom: solid 3px black;
+  border-bottom: solid 1px #5E6868;
+}
+
+#menu-i, .dinner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#menu-i {
+  justify-content: center;
+}
+
+.dinner {
+  justify-content: center;
 }
 
 /*-- 13.2 - Columns --*/
@@ -492,9 +508,6 @@ header {
   margin: 0 auto;
 }
 
-.header-rule {
-  margin-bottom: 30px;
-}
 
 /* Map! */
 
