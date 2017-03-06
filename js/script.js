@@ -27,7 +27,18 @@ $('.mobile-nav-btn').click(function(e){
 	$("#dinner-content").addClass("main-courses");
 	$("#sub-menu").addClass("dinner");
 
+	$('#dinner').addClass("menu-item-active");
+	$('#main-courses').addClass("menu-item-active");
+
+
+
 	$("#dinner").click(function() {
+		$('.dinner > button').removeClass();
+		$('#dinner').addClass("menu-item-active");
+		$('#drinks').removeClass("menu-item-active");
+		$('#main-courses').addClass("menu-item-active");
+
+
 		$("#sub-menu").removeClass();
 		$("#drinks-content").removeClass();
 		$("#sub-menu").addClass("dinner");
@@ -36,6 +47,12 @@ $('.mobile-nav-btn').click(function(e){
 	});
 
 	$("#drinks").click(function() {
+		$('.drinks > button').removeClass();
+		$('#drinks').addClass("menu-item-active");
+		$('#dinner').removeClass("menu-item-active");
+		$('#new-world').addClass("menu-item-active");
+		
+
 		$("#sub-menu").removeClass();
 		$("#dinner-content").removeClass();
 		$("#sub-menu").addClass("drinks");
@@ -44,6 +61,9 @@ $('.mobile-nav-btn').click(function(e){
 	});
 
 	$("#appetizers").click(function() {
+		$('.dinner > button').removeClass();
+		$('#appetizers').addClass("menu-item-active");
+
 		$("#dinner-content").removeClass();
 		$("#dinner-content").addClass("appetizers");
 	});
@@ -54,6 +74,9 @@ $('.mobile-nav-btn').click(function(e){
 	});
 
 	$("#main-courses").click(function() {
+		$('.dinner > button').removeClass();
+		$('#main-courses').addClass("menu-item-active");
+		
 		$("#dinner-content").removeClass();
 		$("#dinner-content").addClass("main-courses");
 	});
@@ -67,8 +90,6 @@ $('.mobile-nav-btn').click(function(e){
 		$("#dinner-content").removeClass();
 		$("#dinner-content").addClass("kids-menu");
 	});
-
-
 
 	$("#old-world").click(function() {
 		$("#drinks-content").removeClass();

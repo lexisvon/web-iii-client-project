@@ -395,6 +395,10 @@ header {
   overflow: auto;
 }
 
+.drinks > .menu-item-active, .dinner > .menu-item-active, .menu-main > .menu-item-active {
+  border-bottom: solid 3px black;
+}
+
 /*-- 13.2 - Columns --*/
 
 .col-1-2 {
