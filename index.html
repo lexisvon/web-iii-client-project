@@ -44,7 +44,7 @@
                     zoom: 15,
 
                     // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(40.7854597,-96.7042762), // New York
+                    center: new google.maps.LatLng(40.7845236,-96.6972465), // New York
                     scrollwheel: false,
                     // How you would like to style the map. 
                     // This is where you would paste any style found on Snazzy Maps.
@@ -60,9 +60,10 @@
 
                 // Let's also add a marker while we're at it
                 var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(40.7854597,-96.7042762),
+                    position: new google.maps.LatLng(40.7845236,-96.6972465),
+                    icon: 'img/favicon-32x32.png',
                     map: map,
-                    title: 'Snazzy!'
+                    title: 'The Normandy'
                 });
             }
         </script>
