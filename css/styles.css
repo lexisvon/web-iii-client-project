@@ -194,6 +194,9 @@ label {
   display: none;
 }
 
+button:focus {
+    outline: none;
+}
 
 /*--------------------------------------------------------------
 2.0 - NAVIGATION MENUS
@@ -375,7 +378,7 @@ header {
   max-width: 1140px;
 }
 
-.about, .menu {
+#about, #menu {
   margin-top: 40px;
 
 }
@@ -483,7 +486,7 @@ header {
   margin: 0 auto;
 }
 
-.gallery {
+#gallery {
   display: block;
   width: 100%;
   margin: 0 auto;
@@ -596,32 +599,32 @@ body {
     height: 100vh;
   }
 
-  .about, .menu {
+  #about, #menu {
     margin-top: 100px;
 
   }
 
-  .about, .menu-featured {
+  #about, .menu-featured {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 100px;
   }
 
-  .about .text-box {
+  #about .text-box {
     width: 66%;
     padding-right: 20px;
   }
 
-  .about .text-box p {
+  #about .text-box p {
     width: 70%;
   }
 
-  .about .text-box h2 {
+  #about .text-box h2 {
     width: 35%;
   }
 
-  .about-img, .menu-img {
+  #about-img, .menu-img {
     width: 33%;
   }
 
@@ -637,7 +640,7 @@ body {
   .featured-wine .text-box {
     padding-left: 37px;
   }
-  .gallery {
+  #gallery {
     width: 75%;
   }
 

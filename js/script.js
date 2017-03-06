@@ -69,6 +69,9 @@ $('.mobile-nav-btn').click(function(e){
 	});
 
 	$("#veg-specials").click(function() {
+		$('.dinner > button').removeClass();
+		$('#veg-specials').addClass("menu-item-active");
+
 		$("#dinner-content").removeClass();
 		$("#dinner-content").addClass("veg-specials");
 	});
@@ -82,26 +85,41 @@ $('.mobile-nav-btn').click(function(e){
 	});
 
 	$("#desserts").click(function() {
+		$('.dinner > button').removeClass();
+		$('#desserts').addClass("menu-item-active");
+
 		$("#dinner-content").removeClass();
 		$("#dinner-content").addClass("desserts");
 	});
 
 	$("#kids-menu").click(function() {
+		$('.dinner > button').removeClass();
+		$('#kids-menu').addClass("menu-item-active");
+
 		$("#dinner-content").removeClass();
 		$("#dinner-content").addClass("kids-menu");
 	});
 
 	$("#old-world").click(function() {
+		$('.drinks > button').removeClass();
+		$('#old-world').addClass("menu-item-active");
+
 		$("#drinks-content").removeClass();
 		$("#drinks-content").addClass("old-world");
 	});
 
 	$("#new-world").click(function() {
+		$('.drinks > button').removeClass();
+		$('#new-world').addClass("menu-item-active");
+
 		$("#drinks-content").removeClass();
 		$("#drinks-content").addClass("new-world");
 	});
 
 	$("#beer").click(function() {
+		$('.drinks > button').removeClass();
+		$('#beer').addClass("menu-item-active");
+
 		$("#drinks-content").removeClass();
 		$("#drinks-content").addClass("beer");
 	});	  
