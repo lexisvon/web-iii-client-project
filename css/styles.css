@@ -25,6 +25,7 @@
 
 body {
   font-family:'freighttext pro', Sans-Serif;
+  -webkit-font-smoothing: antialiased;
   font-size: 10pt;
   color: #5E6868;
 }
@@ -34,6 +35,9 @@ html * {
   margin: 0;
 }
 
+b {
+  font-weight: 600;
+}
 
 
 
@@ -213,6 +217,7 @@ button:focus {
   max-width: 100%;
   background: url('../img/hero.jpg') no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 header {
@@ -224,6 +229,8 @@ header {
 
 .landing header {
   background-color: white;
+  position: fixed;
+  width: 100%;
 }
 
 .main-nav {
@@ -247,13 +254,17 @@ header {
   right: 0;
 }
 
-.mobile-nav-btn {
+.mobile-nav-btn, .mobile-nav-btn-active {
   display: block;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 6px;
+  right: 15px;
   z-index: 1;
   font-size: 1.8rem;
+}
+
+.hide {
+  display: none;
 }
 
 .mobile-nav ul {
@@ -262,7 +273,7 @@ header {
 }
 
 .mobile-nav li {
-  padding: 20px 0;
+  padding: 15px 40px 15px 15px;
   border-bottom: 1px solid lightgrey;
   background-color: white;
 }
@@ -271,6 +282,17 @@ header {
   background-color: #f2f5f5;
   color: #5E6868;
 }
+
+body.scrolled .landing header {
+    opacity: 0.75;
+    transition: opacity .2s;
+}
+body.scrolled .landing header:hover {
+  opacity: 1.0;
+  transition: opacity .2s;
+}
+
+
 
 /*-- 2.2 - Footer Menu --*/
 
@@ -580,6 +602,7 @@ body {
 
 @media (min-width: 800px) {
 
+
   h1 {
     display: inline;
   }
@@ -589,7 +612,7 @@ body {
   }
 
   .landing > header {
-      padding: 15px 50px;
+      padding: 12px 15px;
   }
 
   .main-nav li {

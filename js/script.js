@@ -13,6 +13,13 @@ $('.mobile-nav-btn').click(function(e){
         {
             $('.mobile-nav').show();
         }
+
+
+    	  // Transparency on scroll
+	  window.addEventListener('scroll', function () {
+  document.body.classList[
+    window.scrollY > 20 ? 'add': 'remove'
+  ]('scrolled');
     });
 
 	  $('.gallery-2').slick({
@@ -22,6 +29,8 @@ $('.mobile-nav-btn').click(function(e){
   	cssEase: 'linear'
 	});
 
+
+});
 
 	  // added these two lines of code to set page load default
 	$("#dinner-content").addClass("main-courses");
