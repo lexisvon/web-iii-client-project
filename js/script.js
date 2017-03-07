@@ -1,36 +1,59 @@
 $(document).ready(function(){
+
+
+	$('.mobile-nav-btn').click(function(){
+		$('.mobile-nav-btn').hide();
+		$('.mobile-nav-btn-active').show();
+
+	})
+
+	$('.mobile-nav-btn-active').click(function(){
+		$('.mobile-nav-btn-active').hide();
+		$('.mobile-nav-btn').show();
+	})
+
+
 $('.mobile-nav-btn').click(function(e){
-		 $(".mobile-nav").toggleClass("show");
+		 $(".mobile-nav").addClass("show");
 
 		// this prevents the browser from doing the default link action
 		e.preventDefault();
 
 	});
 
-	var $window = $(window);
-	  $window.on('resize', function (){
-        if ($window.width() < 800)
-        {
-            $('.mobile-nav').show();
-        }
+$('.mobile-nav-btn-active').click(function(e){
+		 $(".mobile-nav").removeClass("show");
 
+		// this prevents the browser from doing the default link action
+		e.preventDefault();
 
-    	  // Transparency on scroll
-	  window.addEventListener('scroll', function () {
-  document.body.classList[
-    window.scrollY > 20 ? 'add': 'remove'
-  ]('scrolled');
-    });
-
-	  $('.gallery-2').slick({
- 	 infinite: true,
- 	speed: 500,
-  	fade: true,
-  	cssEase: 'linear'
 	});
 
-
+var $window = $(window);
+	  $window.on('resize', function (){
+        if ($window.width() < 800){
+            $('.mobile-nav').show();
+            $('.mobile-nav-btn').show();
+        }
+        if ($window.width() > 801){
+        	$('.mobile-nav-btn').hide();
+        	$('.mobile-nav-btn-active').hide();
+        }
+		window.addEventListener('scroll', function () {
+		document.body.classList[
+		window.scrollY > 20 ? 'add': 'remove'
+		]('scrolled');
+		});
 });
+		$('.gallery-2').slick({
+		 infinite: true,
+		speed: 500,
+		fade: true,
+		cssEase: 'linear'
+		});
+
+
+
 
 	  // added these two lines of code to set page load default
 	$("#dinner-content").addClass("main-courses");

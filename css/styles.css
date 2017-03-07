@@ -58,7 +58,6 @@ h1, h2, .button-i {
 
 h2, .button-i {
   color: #91AEAE;
-
 }
 
 h1 {
@@ -102,6 +101,7 @@ h2, .header-rule {
 
 .menu-main h2 {
   text-align: center;
+  padding: 0 20px;
 }
 
 .header-rule {
@@ -145,14 +145,20 @@ a {
   padding: 0 7px;
 }
 
-.button-i {
+.main-nav a:hover {
+  color: #5E6868;
+}
+
+.button-i  {
   padding: 10px 20px;
   margin: 25px 0;
   border: 1px solid #91AEAE;
   display: inline-block;
   font-weight: bold;
-  transition: .5s ease;
+}
 
+.button-i, .main-nav a {
+  transition: .25s ease;
 }
 
 .button-i:hover {
@@ -186,6 +192,8 @@ a {
 .menu-name {
   padding-top: 10px;
 }
+
+
 
 
 /*-- 1.4 - Forms --*/
@@ -261,6 +269,10 @@ header {
   right: 15px;
   z-index: 1;
   font-size: 1.8rem;
+}
+
+.mobile-nav-btn-active {
+  display: none;
 }
 
 .hide {
@@ -500,10 +512,10 @@ body.scrolled .landing header:hover {
 
 .main-logo {
   position: absolute;
-  top: 25%;
-  left: 10%;
-  width: 200px;
-  height: 200px;
+  top: 13%;
+  left: 4%;
+  width: 135px;
+  height: 135px;
   transform: rotate(-15deg);
   mix-blend-mode: hard-light;
 }
@@ -596,6 +608,13 @@ body {
     width: 90%;
   }
 
+  .main-logo {
+    top: 25%;
+    left: 10%;
+    width: 200px;
+    height: 200px
+  }
+
 
  
 }
@@ -679,6 +698,9 @@ body {
   #gallery {
     width: 75%;
   }
+
+
+}
 
 
 }
