@@ -285,6 +285,10 @@ header {
   display: none;
 }
 
+.display {
+  display: block;
+}
+
 .mobile-nav ul {
   text-align: center;
   width: 100%;
