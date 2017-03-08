@@ -51,8 +51,12 @@ h1, h2, .button-i {
   text-transform: uppercase;
 }
 
-h1, h2, .button-i {
+h1, h2 {
   font-family:'freightdisp pro', Serif;
+ 
+}
+
+h1, h2, .button-i, .mobile-nav li, .main-nav li {
   letter-spacing: 0.125rem;
 }
 
@@ -110,6 +114,10 @@ h2, .header-rule {
     background-color: #91AEAE;
 }
 
+#about h2, #events h2 {
+  width: 100% !important;
+}
+
 /*-- 1.2 - Body Copy --*/
 
 p {
@@ -135,10 +143,6 @@ ul {
 a {
   color: #91AEAE;
   text-decoration: none;
-}
-
-.mobile-nav-btn {
-  color: #E4E4E4;
 }
 
 .main-nav li {
@@ -191,6 +195,7 @@ a {
 
 .menu-name {
   padding-top: 10px;
+  font-size: 1rem;
 }
 
 
@@ -239,6 +244,7 @@ header {
   background-color: white;
   position: fixed;
   width: 100%;
+  box-shadow: 0px 11px 45px rgba(0,0,0,0.1);
 }
 
 .main-nav {
@@ -265,10 +271,10 @@ header {
 .mobile-nav-btn, .mobile-nav-btn-active {
   display: block;
   position: absolute;
-  top: 6px;
+  top: 7px;
   right: 15px;
   z-index: 1;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .mobile-nav-btn-active {
@@ -615,12 +621,25 @@ body {
     height: 200px
   }
 
+  #about p {
+    width: 75%;
+  }
+
 
  
 }
 
 @media (min-width: 800px) {
 
+
+  .about-img, .menu-img {
+    height: 550px;
+    width: 50%;
+  }
+
+  #about p {
+    width: 85%;
+  }
 
   h1 {
     display: inline;
@@ -671,10 +690,6 @@ body {
     padding-right: 20px;
   }
 
-  #about .text-box p {
-    width: 70%;
-  }
-
   #about .text-box h2 {
     width: 35%;
   }
@@ -703,11 +718,29 @@ body {
 }
 
 
+
+@media (min-width: 1000px) {
+  
+  .about-img, .menu-img {
+    height: 700px;
+    width: 33%;
+  }
+
+  #about p {
+    width: 70%;
+  }
+
+
+
 }
 
 @media (min-width: 1200px) {
   .wrapper {
     width: 75%;
+  }
+
+  #about p {
+    width: 65%;
   }
 
 }
