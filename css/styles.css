@@ -216,6 +216,38 @@ button:focus {
     outline: none;
 }
 
+input {
+  font-size: 1.2rem;
+  width: 260px;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 3px;
+  padding-bottom: 5px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #91AEAE;
+}
+form .button-i {
+  border: 1px solid #91AEAE;
+  padding: 5px 30px;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #91AEAE;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #91AEAE;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #91AEAE;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #91AEAE;
+}
+
 /*--------------------------------------------------------------
 2.0 - NAVIGATION MENUS
 -------------------------------------------------------------- */
@@ -322,6 +354,10 @@ body.scrolled .landing header:hover {
   justify-content: inherit;
 }
 
+.contact {
+  margin-bottom: 70px !important;
+}
+
 
 /*-- 2.3 - Food Menu --*/
 
@@ -379,22 +415,22 @@ body.scrolled .landing header:hover {
 .price {
   width: 16.66%;
   font-family: "freightsans pro", sans-serif;
-
 }
 
 .menu-main span {
   font-size: .75rem;
 }
 
-
-
-
 .menu-item, .menu-name, .descrip, .price {
   display: flex !important;
 }
 
-.bg-blue .menu-main {
+.menu-main {
   padding: 40px 0;
+}
+
+.bg-blue {
+  padding: 40px 10px;
 }
 
 #dinner-content, #drinks-content {
@@ -430,7 +466,6 @@ body.scrolled .landing header:hover {
 
 #about, #menu {
   margin-top: 40px;
-
 }
 
 .menu-featured header, .menu-featured .text-box {
@@ -465,6 +500,12 @@ body.scrolled .landing header:hover {
   justify-content: center;
 }
 
+#events {
+  padding: 60px 0;
+}
+.row {
+  margin-bottom: 30px;
+}
 /*-- 13.2 - Columns --*/
 
 .col-1-2 {
@@ -553,6 +594,8 @@ body.scrolled .landing header:hover {
   display: block;
   width: 100%;
   margin: 0 auto;
+  padding-top: 80px;
+
 }
 
 
@@ -560,7 +603,7 @@ body.scrolled .landing header:hover {
 
 #map {
   width: 100%;
-  height: 200px;
+  height: 210px;
 }
 /*--------------------------------------------------------------
 5.0 - UTILITY
@@ -736,13 +779,15 @@ body {
   #events {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
   }
 
   #events header {
     width: 50%;
   }
+
   .group-events {
-    width: 
+    width: 40%;
   }
 
   #map {
@@ -752,6 +797,11 @@ body {
   #footer {
     display: flex;
     justify-content: space-between;
+  }
+
+  .row {
+    width: 50%;
+    margin-bottom: 0px;
   }
 
 }
