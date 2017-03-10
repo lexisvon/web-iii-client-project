@@ -338,17 +338,16 @@ header {
   color: #5E6868;
 }
 
-body.scrolled .landing header {
+body .scrolled .landing header {
     opacity: 0.75;
     transition: opacity .2s;
 }
-body.scrolled .landing header:hover {
+body .scrolled .landing header:hover {
   opacity: 1.0;
   transition: opacity .2s;
 }
 
 .gallery-2 {
-  border: 1px solid #91AEAE;
   padding: 7px;
 }
 
@@ -586,6 +585,7 @@ body.scrolled .landing header:hover {
 .main-logo:hover {
   animation-name: wobble;
   animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 /* Gallery */
 .gallery-2 {
