@@ -347,7 +347,10 @@ body.scrolled .landing header:hover {
   transition: opacity .2s;
 }
 
-
+.gallery-2 {
+  border: 1px solid #91AEAE;
+  padding: 7px;
+}
 
 /*-- 2.2 - Footer Menu --*/
 #footer header {
