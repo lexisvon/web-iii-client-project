@@ -81,7 +81,6 @@ h2 {
   font-size: 1.5rem;
   padding: 10px 0;
   font-weight: 300;
-  text-overflow: 1;
 }
 
 .featured-wine h2 {
@@ -116,6 +115,10 @@ h2, .header-rule {
 
 #about h2, #events h2 {
   width: 100% !important;
+}
+
+h3 {
+  font-size: 1.125rem;
 }
 
 /*-- 1.2 - Body Copy --*/
@@ -204,8 +207,8 @@ a {
 /*-- 1.4 - Forms --*/
 
 p {
-  font-size: 1.125rem;
-  line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
 }
 
 label {
@@ -363,9 +366,11 @@ body .scrolled .landing header:hover {
 
 /*-- 2.3 - Food Menu --*/
 
- #sub-menu div, #dinner-content div, #drinks-content div {
+ #sub-menu div, #dinner-content>div, #drinks-content>div {
   display: none;
 } 
+
+
 
 #sub-menu.drinks .drinks,
 #sub-menu.dinner .dinner,
@@ -379,7 +384,6 @@ body .scrolled .landing header:hover {
 #drinks-content.beer .beer {
     display: block;
     animation: fade-in .75s;
-  animation-direction: both;
 }
 
 @keyframes fade-in {
@@ -421,6 +425,7 @@ body .scrolled .landing header:hover {
 
 .menu-main span {
   font-size: .75rem;
+  font-weight: bold;
 }
 
 .menu-item, .menu-name, .descrip, .price {
@@ -438,6 +443,8 @@ body .scrolled .landing header:hover {
 #dinner-content, #drinks-content {
   margin-top: 50px;
 }
+
+
 
 
 
@@ -678,6 +685,11 @@ body {
     width: 75%;
   }
 
+  #dinner-content>div, #drinks-content>div {
+    width: 75%;
+    margin: 0 auto;
+  }
+
 
  
 }
@@ -756,13 +768,19 @@ body {
     padding-left: 20px;
   }
 
-  .featured-wine .header-rule {
+.featured-wine .header-rule {
     width: 80%;
   }
 
-  .featured-wine .text-box {
+.featured-wine .text-box {
     padding-left: 37px;
   }
+
+
+  #dinner-content>div, #drinks-content>div {
+    width: 50%;
+  }
+
 
 }
 
