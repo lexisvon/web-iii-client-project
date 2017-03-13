@@ -42,12 +42,16 @@ var $window = $(window);
             $('.mobile-nav-btn-active.display').removeClass('display');
 
         }
-		window.addEventListener('scroll', function () {
-		document.body.classList[
-		window.scrollY > 20 ? 'add': 'remove'
-		]('scrolled');
-		});
+
+      window.addEventListener('scroll', function () {
+	  document.body.classList[
+	  window.scrollY > 20 ? 'add': 'remove'
+	  ]('scrolled');
+	  });
+
 });
+
+
 
 
 	  $('.smooth-scroll').on('click', 'a', function(e) {
@@ -102,14 +106,14 @@ var $window = $(window);
 		$('.drinks > button').removeClass();
 		$('#drinks').addClass("menu-item-active");
 		$('#dinner').removeClass("menu-item-active");
-		$('#new-world').addClass("menu-item-active");
+		$('#rouge').addClass("menu-item-active");
 		
 
 		$("#sub-menu").removeClass();
 		$("#dinner-content").removeClass();
 		$("#sub-menu").addClass("drinks");
 		// added this to always show old world drinks on click of drinks
-		$("#drinks-content").addClass("old-world");
+		$("#drinks-content").addClass("rouge");
 	});
 
 	$("#appetizers").click(function() {
@@ -152,21 +156,38 @@ var $window = $(window);
 		$("#dinner-content").addClass("kids-menu");
 	});
 
-	$("#old-world").click(function() {
+	$("#blanc").click(function() {
 		$('.drinks > button').removeClass();
-		$('#old-world').addClass("menu-item-active");
+		$('#blanc').addClass("menu-item-active");
 
 		$("#drinks-content").removeClass();
-		$("#drinks-content").addClass("old-world");
+		$("#drinks-content").addClass("blanc");
 	});
 
-	$("#new-world").click(function() {
+	$("#rose").click(function() {
 		$('.drinks > button').removeClass();
-		$('#new-world').addClass("menu-item-active");
+		$('#rose').addClass("menu-item-active");
 
 		$("#drinks-content").removeClass();
-		$("#drinks-content").addClass("new-world");
+		$("#drinks-content").addClass("rose");
 	});
+
+	$("#champagne").click(function() {
+		$('.drinks > button').removeClass();
+		$('#champagne').addClass("menu-item-active");
+
+		$("#drinks-content").removeClass();
+		$("#drinks-content").addClass("champagne");
+	});
+
+	$("#rouge").click(function() {
+		$('.drinks > button').removeClass();
+		$('#rouge').addClass("menu-item-active");
+
+		$("#drinks-content").removeClass();
+		$("#drinks-content").addClass("rouge");
+	});
+
 
 	$("#beer").click(function() {
 		$('.drinks > button').removeClass();

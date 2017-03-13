@@ -197,10 +197,8 @@ a {
 }
 
 .menu-name {
-  padding-top: 10px;
   font-size: 1rem;
 }
-
 
 
 
@@ -263,7 +261,7 @@ form .button-i {
   overflow-x: hidden;
   width: 100vw;
   max-width: 100%;
-  background: url('../img/hero.jpg') no-repeat;
+  background: url('../img/dinner-ii.jpg') no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -379,8 +377,10 @@ body .scrolled .landing header:hover {
 #dinner-content.main-courses .main-courses,
 #dinner-content.desserts .desserts,
 #dinner-content.kids-menu .kids-menu,
-#drinks-content.old-world .old-world,
-#drinks-content.new-world .new-world,
+#drinks-content.blanc .blanc,
+#drinks-content.rose .rose,
+#drinks-content.champagne .champagne,
+#drinks-content.rouge .rouge,
 #drinks-content.beer .beer {
     display: block;
     animation: fade-in .75s;
@@ -398,14 +398,13 @@ body .scrolled .landing header:hover {
 .appetizers {
     flex-direction: column;
     flex-wrap: wrap;
-    height: 800px;
 }
 
 .menu-item {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  margin: 10px 0;
+  margin: 18px 0;
 }
 
 .menu-name {
@@ -421,6 +420,18 @@ body .scrolled .landing header:hover {
 .price {
   width: 16.66%;
   font-family: "freightsans pro", sans-serif;
+}
+
+#drinks-content .menu-name {
+  width: 75%;
+}
+
+#drinks-content .descrip {
+  width: 75%;
+}
+
+#drinks-content .price {
+  width: 25%;
 }
 
 .menu-main span {
@@ -444,7 +455,14 @@ body .scrolled .landing header:hover {
   margin-top: 50px;
 }
 
+#drinks-content .price {
+  display: flex;
+  justify-content: center
+}
 
+.bottle, .glass {
+  width: 50%;
+}
 
 
 
@@ -496,7 +514,7 @@ body .scrolled .landing header:hover {
   border-bottom: solid 1px #5E6868;
 }
 
-#menu-i, .dinner {
+#menu-i, .dinner, .drinks {
     display: flex;
     flex-wrap: wrap;
 }
@@ -505,8 +523,9 @@ body .scrolled .landing header:hover {
   justify-content: center;
 }
 
-.dinner {
+.dinner, .drinks {
   justify-content: center;
+  text-align: center;
 }
 
 #events {
@@ -568,6 +587,14 @@ body .scrolled .landing header:hover {
 /*--------------------------------------------------------------
 4.0 - MEDIA
 -------------------------------------------------------------- */
+
+.about-img {
+  background: url('../img/app-ii.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
 .hero-img img {
  width: 100%;
 
@@ -583,11 +610,15 @@ body .scrolled .landing header:hover {
   mix-blend-mode: hard-light;
 }
 
-.about-img, .menu-img {
+.menu-img {
   background-color: lightgray;
+}
+
+.about-img, .menu-img {
   width: 100%;
   height: 400px;
 }
+
 
 .main-logo:hover {
   animation-name: wobble;

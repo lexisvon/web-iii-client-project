@@ -61,7 +61,7 @@
                 // Let's also add a marker while we're at it
                 var marker = new google.maps.Marker({
                     position: new google.maps.LatLng(40.7845236,-96.6972465),
-                    icon: 'img/icons/Asset 632.png',
+                    icon: 'img/icons/map-icon.png',
                     map: map,
                     title: 'The Normandy'
                 });
@@ -159,8 +159,10 @@
               <button id="kids-menu">Kids Menu</button>
             </div>
             <div class="drinks">
-              <button id="old-world">Old World</button>
-              <button id="new-world">New World</button>
+              <button id="blanc">Blanc</button>
+              <button id="rose">Rose</button>
+              <button id="champagne">Champagne</button>
+              <button id="rouge">Rouge</button>
               <button id="beer">Beer &amp; Spirits</button>
             </div>
           </div>
@@ -530,38 +532,458 @@
           </div>
 
           <div id="drinks-content" class="empty">
-            <div class="old-world">
-              <h2>Old World </h2>
-              <p>Moules</p>
-              <p>Moules</p>
-              <p>Moules</p>
-              <p>Moules</p>
-              <p>Moules</p>
+            
+          <!-- Start Blanc Section -->
+            <div class="blanc">
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Henri Perçussent Mâcon-Villages</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">40</p>
+                  <p glass="glass">-</p>
+                </div>
+                <div class="descrip">
+                  <p>Chardonnay. 2013.</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Domaine du Salvard Cheverny</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">45</p>
+                  <p glass="glass">10</p>
+                </div>
+                <div class="descrip">
+                  <p>Chardonnay/Sauvignon Blanc. 2015.</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Olivier Savary Chablis</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">51</p>
+                  <p glass="glass">-</p>
+                </div>
+                <div class="descrip">
+                  <p>Chardonnay. 2015.</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Didier Champalou Vouvray</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">49</p>
+                  <p glass="glass">11</p>
+                </div>
+                <div class="descrip">
+                  <p>Chenin Blanc. 2014.</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Cleebourg Vin D’Alsace</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">45</p>
+                  <p glass="glass">10</p>
+                </div>
+                <div class="descrip">
+                  <p>Gewurztraminer. 2014.</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Chateau Haut Laulion Bordeaux</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">40</p>
+                  <p glass="glass">9</p>
+                </div>
+                <div class="descrip">
+                  <p>Sauvignon Blanc. 2012.</p>
+                </div>
+              </div>
+
+
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Domaine Laporte Sancerre</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">69</p>
+                  <p glass="glass">-</p>
+                </div>
+                <div class="descrip">
+                  <p>Sauvignon Blanc. 2015.</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Roumieu Lacoste Sauternes</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">45</p>
+                  <p glass="glass">-</p>
+                </div>
+                <div class="descrip">
+                  <p>Semillon 375 ml. 2014.</p>
+                </div>
+              </div>
             </div>
-            <div class="new-world">
-              <h2>New World</h2>
-              <p>Moules</p>
-              <p>Moules</p>
-              <p>Moules</p>
-              <p>Moules</p>
-              <p>Moules</p>
-              <p>Moules</p>
+
+            <!-- Start Rose -->
+            <div class="rose">
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Moulin de Gassac Languedoc</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">35</p>
+                  <p glass="glass">9</p>
+                </div>
+                <div class="descrip">
+                  <p>Syrah/Carignan. 2015.</p>
+                </div>
+              </div>
             </div>
+
+            <!-- Start Champagne -->
+            <div class="champagne">
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Didier Champalou Vouvray Brut</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">40</p>
+                  <p glass="glass">-</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Moutard “Grande Cuvée” Brut</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">81</p>
+                  <p glass="glass">-</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Start Rouge -->
+            <div class="rouge">
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Domaine Dupeuble Beaujolais</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">40</p>
+                  <p glass="glass">-</p>
+                </div>
+                <div class="descrip">
+                  <p>Gamay. 2015.</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Kermit Lynch Côtes du Rhône</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">38</p>
+                  <p glass="glass">-</p>
+                </div>
+                <div class="descrip">
+                  <p>Grenache/Syrah/Carignan. 2014.</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Locations F-4</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">45</p>
+                  <p glass="glass">10</p>
+                </div>
+                <div class="descrip">
+                  <p>Grenache/Syrah. 2014.</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Féraud Brunel Côtes du Rhône</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">48</p>
+                  <p glass="glass">-</p>
+                </div>
+                <div class="descrip">
+                  <p>Grenache/Syrah/Mourvedre. 2013.</p>
+                </div>
+              </div>
+            
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Chateau La Roque Pic St. Loup</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">43</p>
+                  <p glass="glass">-</p>
+                </div>
+                <div class="descrip">
+                  <p>Grenache/Syrah/Mourvedre. 2013.</p>
+                </div>
+              </div>
+            
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Department 66 “D-66”</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">61</p>
+                  <p glass="glass">-</p>
+                </div>
+                <div class="descrip">
+                  <p>Grenache/Syrah/Carignan. 2013.</p>
+                </div>
+              </div>
+            
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Chateau du Cedre Marcel</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">40</p>
+                  <p glass="glass">10</p>
+                </div>
+                <div class="descrip">
+                  <p>Malbec. 2015.</p>
+                </div>
+              </div>
+            
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Clos La Coutale Cahors</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">56</p>
+                  <p glass="glass">-</p>
+                </div>
+                <div class="descrip">
+                  <p>Malbec/Merlot. 2013.</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Chateau Argadens Bordeaux</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">40</p>
+                  <p glass="glass">9</p>
+                </div>
+                <div class="descrip">
+                  <p>Merlot/Cabernet. 2012.</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Cru Monplaisir Bordeaux</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle"64</p>
+                  <p glass="glass">-</p>
+                </div>
+                <div class="descrip">
+                  <p>Merlot/Cabernet/Cab-Franc. 2014.</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Chateau de Bellevue St. Emillion</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">67</p>
+                  <p glass="glass">-</p>
+                </div>
+                <div class="descrip">
+                  <p>Merlot/Cab-Franc. 2010.</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Foncalieu le Versant Languedoc</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">38</p>
+                  <p glass="glass">9</p>
+                </div>
+                <div class="descrip">
+                  <p>Pinot Noir. 2014.</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Maison Roche Bourgogne</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">57</p>
+                  <p glass="glass">-</p>
+                </div>
+                <div class="descrip">
+                  <p>Pinot Noir. 2014.</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Domaine Faury North Rhône</h3>
+                </div>
+                <div class="price">
+                  <p class="bottle">54</p>
+                  <p glass="glass">-</p>
+                </div>
+                <div class="descrip">
+                  <p>Syrah. 2015.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Start Beer and Spirits -->
             <div class="beer">
-              <h2>Beer &amp; Spirits</h2>
-              <p>Moules</p>
-              <p>Moules</p>
-              <p>Moules</p>
-              <p>Moules</p>
-              <p>Moules</p>
-              <p>Moules</p>
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Bulleit Bourbon</h3>
+                </div>
+                <div class="price">
+                  <p>6</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Bombay</h3>
+                </div>
+                <div class="price">
+                  <p>6</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Grey Goose</h3>
+                </div>
+                <div class="price">
+                  <p>7</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Ricard</h3>
+                </div>
+                <div class="price">
+                  <p>7</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Templeton Rye</h3>
+                </div>
+                <div class="price">
+                  <p>8</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Glenfiddich 12</h3>
+                </div>
+                <div class="price">
+                  <p>8</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Cognac</h3>
+                </div>
+                <div class="price">
+                  <p>12</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Armagnac</h3>
+                </div>
+                <div class="price">
+                  <p>12</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Bud Light</h3>
+                </div>
+                <div class="price">
+                  <p>4</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Stella Artois</h3>
+                </div>
+                <div class="price">
+                  <p>5</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Heinekin</h3>
+                </div>
+                <div class="price">
+                  <p>4</p>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-name">
+                  <h3>Blue Moon</h3>
+                </div>
+                <div class="price">
+                  <p>5</p>
+                </div>
+              </div>
+
+
+
             </div>
           </div>
         </section>
 
       </div>
-    </section>
-
     <!-- Gallery -->
 
     <div class="wrapper">
@@ -571,9 +993,14 @@
           <div class="header-rule"></div>
         </header>
         <div class="gallery-2">
-          <div><img src="img/IMG_4565.jpg" width="100%"></div>
-          <div><img src="img/IMG_4576.jpg" width="100%"></div>
-          <div><img src="img/IMG_4637.jpg" width="100%"></div>
+          <div><img src="img/app-i.jpg" width="100%"></div>
+          <div><img src="img/dinner-i.jpg" width="100%"></div>
+          <div><img src="img/dinner-ii.jpg" width="100%"></div>
+          <div><img src="img/dinner-iii.jpg" width="100%"></div>
+          <div><img src="img/app-ii.jpg" width="100%"></div>
+          <div><img src="img/dinner-iv.jpg" width="100%"></div>
+          <div><img src="img/dinner-v.jpg" width="100%"></div>
+          <div><img src="img/dinner-vi.jpg" width="100%"></div>
         </div>
       </section>
 
