@@ -119,6 +119,7 @@ h2, .header-rule {
 
 h3 {
   font-size: 1.125rem;
+  color: #91AEAE;
 }
 
 /*-- 1.2 - Body Copy --*/
@@ -369,6 +370,10 @@ body .scrolled .landing header:hover {
   border-bottom: 1px solid #91AEAE;
 }
 
+.contact li:first-child {
+  margin-bottom: 10px;
+}
+
 /*-- 2.3 - Food Menu --*/
 
  #sub-menu div, #dinner-content>div, #drinks-content>div {
@@ -542,6 +547,15 @@ body .scrolled .landing header:hover {
 #events {
   padding: 60px 0;
 }
+
+.facebook a {
+  font-style: italic !important;
+  color: #5E6868;
+}
+.facebook a:hover {
+  border-bottom: 1px solid #91AEAE;
+}
+
 .row {
   margin-bottom: 30px;
 }
@@ -889,6 +903,9 @@ body {
   .row {
     width: 50%;
     margin-bottom: 0px;
+  }
+  .hours, .contact {
+    font-size: 13px;
   }
 
 }
