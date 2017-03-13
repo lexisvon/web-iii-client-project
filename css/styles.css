@@ -708,11 +708,16 @@ body {
   font-size: 10pt;
 }
 
-@keyframes wobble {
+/*@keyframes wobble {
   from{transform:rotate(-15deg);}
   to{transform:rotate(10deg)}
-}
+}*/
 
+@keyframes wobble {
+  0%{ -webkit-transform:rotate(-15deg);}
+  25% { -webkit-transform:rotate(10deg);}
+  75% { -webkit-transform:rotate(-15deg);}
+  }
 
 
 
