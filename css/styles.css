@@ -56,7 +56,7 @@ h1, h2 {
  
 }
 
-h1, h2, .button-i, .mobile-nav li, .main-nav li {
+h1, h2, .button-i, .mobile-nav li, .main-nav li, .caption {
   letter-spacing: 0.125rem;
 }
 
@@ -348,10 +348,6 @@ body .scrolled .landing header:hover {
   transition: opacity .2s;
 }
 
-.gallery-2 {
-  padding: 7px;
-}
-
 /*-- 2.2 - Footer Menu --*/
 #footer header {
   justify-content: inherit;
@@ -361,6 +357,17 @@ body .scrolled .landing header:hover {
   margin-bottom: 70px !important;
 }
 
+.hours, .contact {
+  font-size: 1rem;
+}
+
+.contact a {
+  color: #5E6868 !important;
+}
+
+.contact a:hover {
+  border-bottom: 1px solid #91AEAE;
+}
 
 /*-- 2.3 - Food Menu --*/
 
@@ -449,6 +456,10 @@ body .scrolled .landing header:hover {
 
 .bg-blue {
   padding: 40px 10px;
+}
+
+.bg-blue .header-box {
+  margin-bottom: 40px;
 }
 
 #dinner-content, #drinks-content {
@@ -592,6 +603,7 @@ body .scrolled .landing header:hover {
   background: url('../img/app-ii.jpg') no-repeat;
   background-size: cover;
   background-position: center;
+  margin-bottom: 30px;
 }
 
 
@@ -630,15 +642,33 @@ body .scrolled .landing header:hover {
   width: 100%;
   margin: 0 auto;
 }
+.gallery-2 img {
+  width: 100%;
+}
 
 #gallery {
+  position: relative;
   display: block;
   width: 100%;
   margin: 0 auto;
   padding-top: 80px;
 
 }
+.caption {
+  background-color: #FFF9F9;
+  opacity: .8;
+  padding: 10px 20px;
+  position: absolute;
+  z-index: 2;
+  bottom: 30px;
+  left: 0;
+  color: #91AEAE;
+  text-transform: uppercase;
+  width: 30%;
+  text-align: center;
 
+
+}
 
 /* Map! */
 
