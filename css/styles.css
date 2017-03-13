@@ -340,11 +340,11 @@ header {
   color: #5E6868;
 }
 
-body .scrolled .landing header {
+.scrolled .landing header {
     opacity: 0.75;
     transition: opacity .2s;
 }
-body .scrolled .landing header:hover {
+.scrolled .landing header:hover {
   opacity: 1.0;
   transition: opacity .2s;
 }
