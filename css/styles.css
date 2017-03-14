@@ -476,7 +476,7 @@ form .button-i {
   overflow: auto;
 }
 
-.drinks > .menu-item-active, .dinner > .menu-item-active, .menu-main > .menu-item-active {
+.drinks > .menu-item-active, .dinner > .menu-item-active, .menu-main > .menu-item-active, #menu-i > .menu-item-active {
   border-bottom: solid 1px #5E6868;
 }
 
@@ -561,7 +561,9 @@ form .button-i {
 }
 
 .menu-img {
-  background-color: lightgray;
+  background: url('../img/drink-i.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .about-img, .menu-img {
