@@ -537,7 +537,8 @@ form .button-i {
 .main-logo:hover {
   animation-name: wobble;
   animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;-webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation-fill-mode: forwards;
 }
 /* Gallery */
 .gallery-2 {
@@ -646,9 +647,10 @@ body {
 }*/
 
 @keyframes wobble {
-  0%{ -webkit-transform:rotate(-15deg);}
-  25% { -webkit-transform:rotate(10deg);}
-  75% { -webkit-transform:rotate(-15deg);}
+  0%{ -webkit-transform:rotate(-15deg) ;}
+  50% { -webkit-transform:rotate(15deg) ;}
+  75% { -webkit-transform:rotate(5deg) ;}
+  100% { -webkit-transform:rotate(10deg) ;}
   }
 
 

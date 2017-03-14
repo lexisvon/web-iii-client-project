@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
 
+
 	$('.mobile-nav-btn').click(function(e){
 		$('.mobile-nav-btn').removeClass('display');
 		$('.mobile-nav-btn-active').removeClass('hide');
