@@ -38,7 +38,7 @@ body {
   font-family:'freighttext pro', Serif;
 }
 
-p {
+p, .price, .time {
   font-family:'freightsans pro', Sans-Serif;
 }
 
@@ -102,9 +102,7 @@ h2, h3, .button-i, .price p, a {
     background-color: #91AEAE;
 }
 
-h1, label,.main-nav, .mobile-nav-btn-active, .hide  {
-  display: none;
-}
+
 
 
 /*-- 1.1 - Headings --*/
@@ -154,6 +152,7 @@ a {
   margin: 25px 0;
   border: 1px solid #91AEAE;
   display: inline-block;
+  box-shadow: 0px 1px #91AEAE;
 }
 
 .button-i, .main-nav a, h1 a {
@@ -163,6 +162,7 @@ a {
 .button-i:hover {
   background-color: #f2f5f5;
   border-color: #5E6868;
+  box-shadow: 0px -1px #5E6868;
 }
 
 .menu-main button {
@@ -379,7 +379,10 @@ form .button-i {
 
 .price {
   width: 16.66%;
-  font-family: "freightsans pro", sans-serif;
+}
+
+.time {
+  width: 25%;
 }
 
 #drinks-content .menu-name {
@@ -483,6 +486,14 @@ form .button-i {
 #menu-i, .dinner, .drinks {
     display: flex;
     flex-wrap: wrap;
+}
+
+#events .price {
+  width: 33%;
+}
+
+#events .menu-name {
+  width: 66%;
 }
 
 #menu-i {
@@ -648,6 +659,10 @@ h2, .header-rule {
   justify-content: space-between;
 }
 
+h1, label,.main-nav, .hide  {
+  display: none;
+}
+
 /*-- 5.3 - Breakpoints --*/
 
 
@@ -807,7 +822,10 @@ body {
     width: 50%;
   }
 
-
+  .group-events {
+    width: 75%;
+    margin: 0 auto;
+  }
 }
 
 
@@ -853,6 +871,7 @@ body {
   .hours, .contact {
     font-size: 13px;
   }
+
 
 }
 
