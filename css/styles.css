@@ -156,9 +156,9 @@ a {
 }
 
 .menu-main button {
-    border: none;
-    padding: 2px 0;
-    margin: 10px;
+  border: none;
+  padding: 2px 0;
+  margin: 10px;
 }
 
 .menu-main button:hover, .menu-main button:active {
@@ -168,7 +168,6 @@ a {
 button:focus {
     outline: none;
 }
-
 
 /*-- 1.4 - Forms --*/
 
@@ -332,6 +331,7 @@ form .button-i {
 .menu-name {
   align-self: flex-start;
   width: 83.33%;
+  margin-bottom: 15px;
 }
 
 .descrip {
@@ -414,8 +414,6 @@ form .button-i {
   margin-bottom: 20px;
 }
 
-
-
 .wrapper {
   margin: 0 auto;
   width: 93%;
@@ -480,6 +478,7 @@ form .button-i {
 .row {
   margin-bottom: 30px;
 }
+
 /*-- 13.2 - Columns --*/
 
 .col-1-2 {
@@ -498,9 +497,6 @@ form .button-i {
 .featured-wine .header-rule {
   width: 70%;
 }
-
-
-
 
 /*--------------------------------------------------------------
 4.0 - MEDIA
@@ -533,14 +529,15 @@ form .button-i {
   height: 400px;
 }
 
-
 .main-logo:hover {
   animation-name: wobble;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;-webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
   animation-fill-mode: forwards;
 }
+
 /* Gallery */
+
 .gallery-2 {
   margin: 0 auto;
 }
@@ -561,8 +558,6 @@ form .button-i {
   bottom: 30px;
   left: 0;
   width: 30%;
-
-
 }
 
 /* Map! */
@@ -593,7 +588,7 @@ form .button-i {
 }
 
 .landing header, .mobile-nav li {
-  background-color: white;
+  background-color: #fff;
 }
 /*-- 5.2 - Alignments --*/
 
