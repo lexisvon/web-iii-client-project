@@ -31,7 +31,6 @@ html * {
 body {
   -webkit-font-smoothing: antialiased;
   font-size: 10pt;
-  color: #5E6868;
 }
 
 body {
@@ -54,7 +53,7 @@ b, .price p, .button-i, .menu-main button {
   font-weight: 600;
 }
 
-h1, h2, .button-i, input, form .button-i, header {
+h1, h2, .button-i, input, form .button-i, header, .menu-main button, .caption {
   text-transform: uppercase;
 }
 
@@ -86,21 +85,19 @@ p {
   line-height: 1.25rem;
 }
 
-h2, h3, .button-i, .price p, a {
+h2, h3, .button-i, .price p, a, .caption {
   color: #91AEAE;
 }
 
-.main-nav a:hover, .button-i:hover, .menu-main button, h1 a:hover {
+body, .main-nav a:hover, .button-i:hover, .menu-main button, h1 a:hover, .mobile-nav li:first-of-type, .contact a, .facebook a {
   color: #5E6868;
 }
 
-.menu-main h2 {
+.menu-main h2, .mobile-nav ul, .dinner, .drinks, .caption {
   text-align: center;
 }
 
-.header-rule {
-    background-color: #91AEAE;
-}
+
 
 
 
@@ -160,15 +157,12 @@ a {
 }
 
 .button-i:hover {
-  background-color: #f2f5f5;
   border-color: #5E6868;
   box-shadow: 0px -1px #5E6868;
 }
 
 .menu-main button {
     border: none;
-    text-transform: uppercase;
-    background-color: transparent;
     padding: 2px 0;
     margin: 10px;
 }
@@ -191,7 +185,6 @@ input {
   padding-bottom: 5px;
   border: none;
   outline: none;
-  background-color: transparent;
   border-bottom: 1px solid #91AEAE;
 }
 
@@ -235,7 +228,6 @@ form .button-i {
 
 
 .landing header {
-  background-color: white;
   position: fixed;
   width: 100%;
   box-shadow: 0px 11px 45px rgba(0,0,0,0.03);
@@ -273,19 +265,12 @@ form .button-i {
 }
 
 .mobile-nav ul {
-  text-align: center;
   width: 100%;
 }
 
 .mobile-nav li {
   padding: 15px 40px 15px 15px;
   border-bottom: 1px solid lightgrey;
-  background-color: white;
-}
-
-.mobile-nav li:first-of-type {
-  background-color: #f2f5f5;
-  color: #5E6868;
 }
 
 .scrolled .landing header {
@@ -308,10 +293,6 @@ form .button-i {
 
 .hours, .contact {
   font-size: 1rem;
-}
-
-.contact a {
-  color: #5E6868 !important;
 }
 
 .contact a:hover {
@@ -502,7 +483,6 @@ form .button-i {
 
 .dinner, .drinks {
   justify-content: center;
-  text-align: center;
 }
 
 #events {
@@ -511,8 +491,8 @@ form .button-i {
 
 .facebook a {
   font-style: italic !important;
-  color: #5E6868;
 }
+
 .facebook a:hover {
   border-bottom: 1px solid #91AEAE;
 }
@@ -613,10 +593,7 @@ form .button-i {
   z-index: 2;
   bottom: 30px;
   left: 0;
-  color: #91AEAE;
-  text-transform: uppercase;
   width: 30%;
-  text-align: center;
 
 
 }
@@ -637,10 +614,25 @@ form .button-i {
   background-color: #F8FAFA;
 }
 
+.header-rule {
+  background-color: #91AEAE;
+}
+
+.button-i:hover, .mobile-nav li:first-of-type  {
+  background-color: #f2f5f5;
+}
+
+.menu-main button, input {
+  background-color: transparent;
+}
+
+.landing header, .mobile-nav li {
+  background-color: white;
+}
 /*-- 5.2 - Alignments --*/
 
 .price p {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .header-box, header, .mobile-nav {
