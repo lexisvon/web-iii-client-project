@@ -118,14 +118,8 @@ h2 {
 }
 
 .header-rule {
-    height: 1px;
-    width: 100%;
+  height: 1px;
 }
-
-#about h2, #events h2 {
-  width: 100% !important;
-}
-
 
 /*-- 1.2 - Body Copy --*/
 
@@ -221,7 +215,7 @@ form .button-i {
   overflow-x: hidden;
   width: 100vw;
   max-width: 100%;
-  background: url('../img/dinner-ii.jpg') no-repeat;
+  background: url('../img/gallery/dinner-ii.jpg') no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -229,9 +223,12 @@ form .button-i {
 
 .landing header {
   position: fixed;
-  width: 100%;
   box-shadow: 0px 11px 45px rgba(0,0,0,0.03);
   z-index: 3;
+}
+
+.landing header, .mobile-nav ul, .menu-item, .menu-featured header, .menu-featured .text-box, #about h2, .events h2, .hero-img img, .about-img, .menu-img, .gallery-2, .gallery-2 img, .gallery, #map, .header-rule   {
+  width: 100%;
 }
 
 .mobile-nav {
@@ -248,7 +245,6 @@ form .button-i {
 }
 
 .mobile-nav-btn, .mobile-nav-btn-active {
-  display: block;
   position: absolute;
   top: 7px;
   right: 15px;
@@ -256,16 +252,12 @@ form .button-i {
   font-size: 1.5rem;
 }
 
-.hide {
+.hide, #sub-menu div, #dinner-content>div, #drinks-content>div  {
   display: none;
 }
 
-.display {
+.display, .mobile-nav-btn, .mobile-nav-btn-active {
   display: block;
-}
-
-.mobile-nav ul {
-  width: 100%;
 }
 
 .mobile-nav li {
@@ -305,12 +297,6 @@ form .button-i {
 
 /*-- 2.3 - Food Menu --*/
 
- #sub-menu div, #dinner-content>div, #drinks-content>div {
-  display: none;
-} 
-
-
-
 #sub-menu.drinks .drinks,
 #sub-menu.dinner .dinner,
 #dinner-content.appetizers .appetizers,
@@ -328,12 +314,8 @@ form .button-i {
 }
 
 @keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .appetizers {
@@ -343,7 +325,6 @@ form .button-i {
 
 .menu-item {
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
   margin: 18px 0;
 }
@@ -446,7 +427,6 @@ form .button-i {
 }
 
 .menu-featured header, .menu-featured .text-box {
-    width: 100%;
     margin: 0 auto;
 }
 
@@ -469,11 +449,11 @@ form .button-i {
     flex-wrap: wrap;
 }
 
-#events .price {
+.events .price {
   width: 33%;
 }
 
-#events .menu-name {
+.events .menu-name {
   width: 66%;
 }
 
@@ -485,7 +465,7 @@ form .button-i {
   justify-content: center;
 }
 
-#events {
+.events {
   padding: 60px 0;
 }
 
@@ -519,9 +499,7 @@ form .button-i {
   width: 70%;
 }
 
-#about h2, #events h2 {
-  width: 100% !important;
-}
+
 
 
 /*--------------------------------------------------------------
@@ -529,16 +507,10 @@ form .button-i {
 -------------------------------------------------------------- */
 
 .about-img {
-  background: url('../img/app-ii.jpg') no-repeat;
+  background: url('../img/gallery/app-ii.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   margin-bottom: 30px;
-}
-
-
-.hero-img img {
- width: 100%;
-
 }
 
 .main-logo {
@@ -552,13 +524,12 @@ form .button-i {
 }
 
 .menu-img {
-  background: url('../img/drink-i.jpg') no-repeat;
+  background: url('../img/gallery/drink-i.jpg') no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .about-img, .menu-img {
-  width: 100%;
   height: 400px;
 }
 
@@ -570,17 +541,12 @@ form .button-i {
 }
 /* Gallery */
 .gallery-2 {
-  width: 100%;
   margin: 0 auto;
 }
-.gallery-2 img {
-  width: 100%;
-}
 
-#gallery {
+.gallery {
   position: relative;
   display: block;
-  width: 100%;
   margin: 0 auto;
   padding-top: 80px;
 
@@ -601,7 +567,6 @@ form .button-i {
 /* Map! */
 
 #map {
-  width: 100%;
   height: 210px;
 }
 /*--------------------------------------------------------------
@@ -833,13 +798,13 @@ body {
     width: 70%;
   }
 
-  #events {
+  .events {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
   }
 
-  #events header {
+  .events header {
     width: 50%;
   }
 
