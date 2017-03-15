@@ -81,7 +81,7 @@ h1, h2, .button-i, .mobile-nav li, .main-nav li, .caption, #sub-menu button {
     letter-spacing: .25rem;
 }
 
-p, #footer li {
+p {
   line-height: 1.25rem;
 }
 
@@ -121,14 +121,6 @@ h2 {
   height: 1px;
 }
 
-  #about .text-box h2 {
-    width: 220px;
-  }
-
-  .events h2 {
-    width: 430px;
-  }
-
 /*-- 1.2 - Body Copy --*/
 
 ul {
@@ -151,6 +143,7 @@ a {
   margin: 25px 0;
   border: 1px solid #91AEAE;
   display: inline-block;
+  box-shadow: 0px 1px #91AEAE;
 }
 
 .button-i, .main-nav a, h1 a {
@@ -159,6 +152,7 @@ a {
 
 .button-i:hover {
   border-color: #5E6868;
+  box-shadow: 0px -1px #5E6868;
 }
 
 .menu-main button {
@@ -337,7 +331,7 @@ form .button-i {
 .menu-item {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 27px;
+  margin: 20px 0;
 }
 
 .menu-name {
@@ -749,7 +743,13 @@ body {
     padding-right: 20px;
   }
 
+  #about .text-box h2 {
+    width: 225px;
+  }
 
+  #events h2 {
+    width: 430px;
+  }
 
   .featured-wine {
     width: 66%;
@@ -766,7 +766,7 @@ body {
 
 
   #dinner-content>div, #drinks-content>div {
-    width: 75%;
+    width: 50%;
   }
 
   .group-events {
@@ -774,17 +774,15 @@ body {
     margin: 0 auto;
   }
 
-
+  .menu-main {
+    padding: 40px 0;
+  }
 }
 
 
 
 @media (min-width: 1000px) {
   
-  #dinner-content>div, #drinks-content>div {
-    width: 50%;
-  }
-
   .about-img, .menu-img {
     height: 75vh;
     width: 40%;
@@ -825,13 +823,6 @@ body {
     font-size: 13px;
   }
 
-  .menu-main {
-    padding: 40px 0;
-  }
-
-  .events {
-    padding: 100px 0;
-  }
 
 }
 
