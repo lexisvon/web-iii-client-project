@@ -116,12 +116,12 @@ h2 {
   height: 1px;
 }
 
-#about .text-box h2 {
-  width: 220px;
+#events h2 {
+  padding-top: 0;
 }
 
-.events h2 {
-  width: 430px;
+#gallery h2 {
+  padding-right: 15px;
 }
 
 /*-- 1.2 - Body Copy --*/
@@ -158,7 +158,7 @@ a {
 .menu-main button {
   border: none;
   padding: 2px 0;
-  margin: 10px;
+  margin: 15px 10px 0 10px;;
 }
 
 .menu-main button:hover, .menu-main button:active {
