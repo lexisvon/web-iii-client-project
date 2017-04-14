@@ -407,7 +407,7 @@ form .button-i {
   max-width: 1140px;
 }
 
-h1, label,.main-nav, .hide, #sub-menu div, #dinner-content>div, #drinks-content>div  {
+h1, label, .main-nav, .hide, #sub-menu div, #dinner-content>div, #drinks-content>div  {
   display: none;
 }
 
